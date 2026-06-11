@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ace Interviews
+
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+[![Claude API](https://img.shields.io/badge/Claude-API-orange)](https://www.anthropic.com/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/nahrinoda/ace-interviews/pulls)
+
+An AI-powered interview prep platform I built to prepare for big tech interviews. It uses Claude as a virtual professor — **Professor Chen**, a Stanford CS professor and former Anthropic engineer — who generates tailored lessons, reviews your code with Socratic coaching, and never just hands you the answer.
+
+## My Experience
+
+I built this because I wanted something better than grinding LeetCode blindly. The curriculum here isn't random — it's structured around what top companies actually test, starting from machine-level foundations (binary, memory layout, cache performance) that most engineers skip, through Python mastery, all the way up to full system-building OA problems with multi-tier complexity.
+
+**What the AI does:** Claude powers Professor Chen, who generates focused lessons for each topic, explains why companies care about specific concepts, and provides Socratic hints when you're stuck. He reviews your code and asks guiding questions instead of giving away solutions — the way a real mentor would. There's also text-to-speech via ElevenLabs so you can listen to lessons.
+
+**The questions are hard.** The OA practice section includes multi-tiered system design problems — banking systems, key-value stores, web crawlers, inventory management, file caches — each with 3-4 tiers that progressively increase in complexity. These aren't toy problems; they mirror the kind of challenges you'll face in real interviews.
+
+This project helped me prepare for a major interview that I aced. It's open source — feel free to clone it, use it for your own prep, and contribute back.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18+)
+- An [Anthropic API key](https://console.anthropic.com/)
+- (Optional) An [ElevenLabs](https://elevenlabs.io/) API key and voice ID for text-to-speech
+
+### Clone and Install
+
+```bash
+git clone https://github.com/nahrinoda/ace-interviews.git
+cd ace-interviews
+npm install
+```
+
+### Environment Variables
+
+Create a `.env.local` file in the project root:
+
+```env
+ANTHROPIC_API_KEY=your_anthropic_api_key
+
+# Optional — enables text-to-speech for lessons
+ELEVENLABS_API_KEY=your_elevenlabs_api_key
+ELEVENLABS_VOICE_ID=your_elevenlabs_voice_id
+```
+
+### Run
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js 16** (App Router) with React 19
+- **Tailwind CSS v4** for styling
+- **Claude API** (Anthropic) for AI-generated lessons and Socratic coaching
+- **ElevenLabs API** for text-to-speech
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+This project is open for contributions. Whether you want to add new curriculum phases, improve the UI, add new OA problems, or integrate additional features — PRs are welcome.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Build
+npm run build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Lint
+npm run lint
+```
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the [MIT License](LICENSE) — use it, fork it, build on it.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+**Keywords:** interview prep, coding interview, big tech, FAANG, AI tutor, Claude, Anthropic, LeetCode alternative, system design, OA practice, Python, Next.js, open source
