@@ -1,5 +1,10 @@
 # Ace Interviews
 
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+[![Claude API](https://img.shields.io/badge/Claude-API-orange)](https://www.anthropic.com/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/nahrinoda/ace-interviews/pulls)
+
 An AI-powered interview prep platform I built to prepare for big tech interviews. It uses Claude as a virtual professor — **Professor Chen**, a Stanford CS professor and former Anthropic engineer — who generates tailored lessons, reviews your code with Socratic coaching, and never just hands you the answer.
 
 ## My Experience
@@ -66,3 +71,11 @@ npm run build
 # Lint
 npm run lint
 ```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE) — use it, fork it, build on it.
+
+---
+
+**Keywords:** interview prep, coding interview, big tech, FAANG, AI tutor, Claude, Anthropic, LeetCode alternative, system design, OA practice, Python, Next.js, open source
